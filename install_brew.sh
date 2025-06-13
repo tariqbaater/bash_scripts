@@ -1,7 +1,23 @@
 #!/usr/bin/env bash
 
+print_logo() {
+  cat <<EOF
+
+  ______           _       ____              __
+ /_  __/___ ______(_)___ _/ __ )____ _____ _/ /____  _____
+  / / / __ `/ ___/ / __ `/ __  / __ `/ __ `/ __/ _ \/ ___/
+ / / / /_/ / /  / / /_/ / /_/ / /_/ / /_/ / /_/  __/ /       MacOS Setup Script
+/_/  \__,_/_/  /_/\__, /_____/\__,_/\__,_/\__/\___/_/        by: Tariq Baater
+                    /_/
+
+EOF
+}
 # This script installs Homebrew packages from a file named "brew_list".
 # It reads the file line-by-line and installs each package if it's not already installed.
+
+
+clear
+print_logo
 
 set -euo pipefail
 
